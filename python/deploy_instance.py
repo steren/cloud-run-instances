@@ -4,13 +4,13 @@ client = run_v2.InstancesClient()
 
 project_id = "steren-run"
 location = "europe-west9"
-image = "us-docker.pkg.dev/cloudrun/container/hello"
+image = "python" # Official Python image from DockerHub
 
 operation = client.create_instance(
     request={
         "parent": f"projects/{project_id}/locations/{location}",
         "instance": {
-            "containers": [{"image": image}]
+            "containers": [{"image": "image"}]
         }
     }
 )

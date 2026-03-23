@@ -4,7 +4,7 @@ const client = new InstancesClient();
 
 const projectId = 'steren-run';
 const location = 'europe-west9';
-const image = 'us-docker.pkg.dev/cloudrun/container/hello';
+const image = 'node'; // Official Node.js image from DockerHub
 
 const [operation] = await client.createInstance({
   parent: `projects/${projectId}/locations/${location}`,

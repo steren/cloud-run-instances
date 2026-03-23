@@ -4,7 +4,7 @@
 ACCESS_TOKEN=$(gcloud auth print-access-token)
 PROJECT_ID="steren-run"
 LOCATION="europe-west9"
-IMAGE="us-docker.pkg.dev/cloudrun/container/hello"
+IMAGE="ubuntu" # Official Ubuntu image from DockerHub
 
 # Create the instance
 echo "Creating instance..."

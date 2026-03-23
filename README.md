@@ -1,6 +1,6 @@
 # Cloud Run Instance Deployer
 
-This repository provides Node.js, Python, and cURL examples to deploy standalone Cloud Run Instances using the Google Cloud Run Admin SDK. Unlike instances of Cloud Run Services, Jobs, or Worker Pools, these instances are individually manageable.
+This repository provides Node.js, Python, cURL, and gcloud CLI examples to deploy standalone Cloud Run Instances using the Google Cloud Run Admin SDK. Unlike instances of Cloud Run Services, Jobs, or Worker Pools, these instances are individually manageable.
 
 Cloud Run instances are currently in Private Preview.
 
@@ -14,6 +14,8 @@ cloud-run-instances/
 ├── python/
 │   ├── deploy_instance.py   # Python deployment script
 │   └── requirements.txt     # Python dependencies
+├── gcloud/
+│   └── deploy-instance.sh   # gcloud CLI example script
 └── curl/
     └── deploy-instance.sh   # cURL example script
 ```
@@ -21,6 +23,14 @@ cloud-run-instances/
 ## Usage
 
 Each script requires a Google Cloud Project ID, a location (region), an instance ID, and a container image URI.
+
+### gcloud CLI
+
+1.  Navigate to the `gcloud` directory: `cd gcloud`
+2.  Ensure you have the gcloud CLI installed and authenticated: `gcloud auth login`
+3.  Make the script executable: `chmod +x deploy-instance.sh`
+4.  Update the project and instance variables in the script.
+5.  Run the script: `./deploy-instance.sh`
 
 ### Node.js
 
