@@ -1,6 +1,8 @@
-# Cloud Run Standalone Instance Deployer
+# Cloud Run Instance Deployer
 
-This repository provides Node.js, Python, and cURL examples to deploy standalone Cloud Run Instances using the Google Cloud Run Admin v2 SDK. Unlike standard Services or Jobs, these instances represent manageable, non-request-driven container units within a location.
+This repository provides Node.js, Python, and cURL examples to deploy standalone Cloud Run Instances using the Google Cloud Run Admin SDK. Unlike instances of Cloud Run Services, Jobs, or Worker Pools, these instances are individually manageable.
+
+Cloud Run instances are currently in Private Preview.
 
 ## Project Structure
 
