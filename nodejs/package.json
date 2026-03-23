@@ -2,9 +2,10 @@
   "name": "cloud-run-instance-deployer-node",
   "version": "1.0.0",
   "description": "Deploy standalone Cloud Run Instances using Node.js SDK",
-  "main": "deploy_instance.js",
+  "type": "module",
+  "main": "deploy-instance.js",
   "dependencies": {
-    "@google-cloud/run": "^1.2.1"
+    "@google-cloud/run": "^3.2.0"
   },
   "scripts": {
     "start": "node deploy-instance.js"
