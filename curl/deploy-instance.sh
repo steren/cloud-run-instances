@@ -11,11 +11,5 @@ echo "Creating instance..."
 curl -H "Content-Type: application/json" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -X POST \
-  -d "{
-    \"containers\": [
-      {
-        \"image\": \"$IMAGE\"
-      }
-    ]
-  }" \
+  -d "{\"containers\": [{\"image\": \"$IMAGE\"}]}" \
   "https://run.googleapis.com/v2/projects/$PROJECT_ID/locations/$LOCATION/instances"
