@@ -2,7 +2,7 @@
 
 This repository provides Node.js, Python, cURL, and gcloud CLI examples to deploy standalone Cloud Run Instances using the Google Cloud Run Admin SDK. Unlike instances of Cloud Run Services, Jobs, or Worker Pools, these instances are individually manageable.
 
-Cloud Run instances are currently in Private Preview.
+Cloud Run instances are currently in Private Preview, sign up [here](https://forms.gle/MKxUAxYnEqH44K7V7)
 
 ## Project Structure
 
